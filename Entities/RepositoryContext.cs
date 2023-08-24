@@ -11,7 +11,7 @@ namespace BackendApi2.Entities
     {
         public RepositoryContext()
         {
-
+            
         }
 
         public RepositoryContext(DbContextOptions<RepositoryContext> options)
