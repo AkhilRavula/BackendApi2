@@ -1,6 +1,10 @@
+using System.Text;
 using System.Text.Json.Serialization;
+using BackendApi2.Contracts;
 using BackendApi2.ServiceExtensions;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.IdentityModel.Tokens;
 using NLog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,7 +24,22 @@ builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.ConfigureSqlServer(builder.Configuration);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+ .AddJwtBearer(optn=>
+ {
+     optn.TokenValidationParameters =  new TokenValidationParameters()
+     {
+       ValidateIssuerSigningKey = true,
+       ValidateIssuer = true,
+       ValidateAudience = false,
+       ValidateLifetime = true,
+       IssuerSigningKey =  new SymmetricSecurityKey( Encoding.UTF8.GetBytes
+       (builder.Configuration.GetSection("JwtSettings:SignKey").Value)),
+       ValidIssuer =  builder.Configuration.GetSection("JwtSettings:Issuer").Value
+
+     };
+ });
+//builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
@@ -28,14 +47,16 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
-    app.UseSwagger();
-    app.UseSwaggerUI();
+   // app.UseSwagger();
+   // app.UseSwaggerUI();
 }
 else
 {
     app.UseHsts();
 }
 
+var logger = app.Services.GetRequiredService<ILoggerManager>();
+app.ConfigureExceptionHandler(logger);
 app.UseStaticFiles();
 app.UseForwardedHeaders(new ForwardedHeadersOptions 
 { 
@@ -43,6 +64,7 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 });
 
 app.UseCors("corsPolicy");
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

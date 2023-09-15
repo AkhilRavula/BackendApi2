@@ -11,6 +11,6 @@ namespace BackendApi2.Contracts
     {
         void DeleteSkill(Skill skill);  
 
-        Skill GetSkillsByid(int skillId);
+        Task<Skill> GetSkillsByid(int skillId);
     }
 }

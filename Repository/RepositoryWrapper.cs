@@ -13,6 +13,8 @@ namespace BackendApi2.Repository
         private RepositoryContext _repositoryContext;
         private IEmployeeRepository? _employeeRepository;
         private ISkillRepository? _skillRepository;
+
+        private IUserRepository? _userRepository;
         public RepositoryWrapper(RepositoryContext repositoryContext)
         {
             _repositoryContext = repositoryContext;
@@ -40,9 +42,21 @@ namespace BackendApi2.Repository
             }
         }
 
-        public void save()
+        public IUserRepository user 
         {
-            _repositoryContext.SaveChanges();
+             get{
+
+                 if(_userRepository == null)
+                {
+                    _userRepository = new UserRepository(_repositoryContext);
+                }
+               return _userRepository;
+            }
+        }
+
+        public async Task save()
+        {
+            await _repositoryContext.SaveChangesAsync();
         }
     }
 }

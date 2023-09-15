@@ -24,12 +24,12 @@ namespace BackendApi2.Controllers
         }
 
          [HttpDelete("{skillsId:int}")]
-         public IActionResult DeleteSkills(int skillsId)
+         public async Task<IActionResult> DeleteSkills(int skillsId)
         {
-           var skill= _repositoryWrapper.skill.GetSkillsByid(skillsId);
+           var skill= await _repositoryWrapper.skill.GetSkillsByid(skillsId);
             _repositoryWrapper.skill.DeleteSkill(skill);
 
-            _repositoryWrapper.save();
+            await _repositoryWrapper.save();
 
             return NoContent();
         }

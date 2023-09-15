@@ -22,6 +22,7 @@ namespace BackendApi2.Entities
 
         public virtual DbSet<Employee> Employees { get; set; } = null!;
         public virtual DbSet<Skill> Skills { get; set; } = null!;
+        public virtual DbSet<User> Users { get; set; } = null!;
 
         // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         // {
@@ -79,6 +80,14 @@ namespace BackendApi2.Entities
                     .OnDelete(DeleteBehavior.Cascade)
                     .HasConstraintName("FK__SKILLS__EMP_ID__3F466844");
             });
+            
+              modelBuilder.Entity<User>(entity =>
+            {
+                entity.Property(e => e.Role).HasMaxLength(10);
+
+                entity.Property(e => e.Username).HasMaxLength(20);
+            });
+            
             OnModelCreatingPartial(modelBuilder);
         }
 

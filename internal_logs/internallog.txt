@@ -4126,3 +4126,1155 @@
 2023-08-22 11:47:44.6262 Trace FileTarget(Name=logfile) has 2 layouts
 2023-08-22 11:47:44.6457 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
 2023-08-22 11:47:44.6457 Info Configuration initialized.
+2023-09-10 23:02:40.3920 Debug Message Template Auto Format enabled
+2023-09-10 23:02:40.4457 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-10 23:02:40.4457 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-10 23:02:40.4457 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-10 23:02:40.4457 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-10 23:02:40.4457 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-10 23:02:40.4457 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-10 23:02:40.4593 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-10 23:02:40.4593 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-10 23:02:40.4593 Debug Adding target NLog.Targets.FileTarget(Name=logfile)
+2023-09-10 23:02:40.4593 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-09-10 23:02:40.4593 Trace ParseRulesElement
+2023-09-10 23:02:40.4797 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-10 23:02:40.4797 Debug Watching file-filter 'nlog.config' in directory: c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2
+2023-09-10 23:02:40.4797 Debug --- NLog configuration dump ---
+2023-09-10 23:02:40.4797 Debug Targets:
+2023-09-10 23:02:40.4901 Debug FileTarget(Name=logfile)
+2023-09-10 23:02:40.4901 Debug Rules:
+2023-09-10 23:02:40.4901 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2023-09-10 23:02:40.4901 Debug --- End of NLog configuration dump ---
+2023-09-10 23:02:40.4901 Trace FindReachableObject<System.Object>:
+2023-09-10 23:02:40.4901 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2023-09-10 23:02:40.4901 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2023-09-10 23:02:40.5080 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-10 23:02:40.5080 Trace   Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-10 23:02:40.5080 Trace   Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-10 23:02:40.5080 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-10 23:02:40.5080 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-10 23:02:40.5080 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-10 23:02:40.5080 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-10 23:02:40.5080 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-10 23:02:40.5080 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-10 23:02:40.5080 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-10 23:02:40.5080 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-10 23:02:40.5271 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-10 23:02:40.5271 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-10 23:02:40.5271 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-10 23:02:40.5271 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-10 23:02:40.5271 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2023-09-10 23:02:40.5271 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2023-09-10 23:02:40.5271 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2\nlog.config
+2023-09-10 23:02:40.5271 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2023-09-10 23:02:40.5449 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2023-09-10 23:02:40.5449 Trace Initializing Layout Renderer: ${message}
+2023-09-10 23:02:40.5449 Trace Initializing Layout Renderer: ${literal}
+2023-09-10 23:02:40.5449 Trace Initializing Layout Renderer: ${level}
+2023-09-10 23:02:40.5449 Trace Initializing Layout Renderer: ${literal}
+2023-09-10 23:02:40.5449 Trace Initializing Layout Renderer: ${longdate}
+2023-09-10 23:02:40.5449 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2023-09-10 23:02:40.5585 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-10 23:02:40.5585 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-10 23:02:40.5585 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-10 23:02:40.5585 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-10 23:02:40.5585 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-10 23:02:40.5585 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-10 23:02:40.5585 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-10 23:02:40.5585 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-10 23:02:40.5585 Trace Initializing Layout Renderer: ${literal}
+2023-09-10 23:02:40.5741 Trace Initializing Layout Renderer: ${shortdate}
+2023-09-10 23:02:40.5741 Trace Initializing Layout Renderer: ${literal}
+2023-09-10 23:02:40.5741 Trace Initializing c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt
+2023-09-10 23:02:40.5741 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-10 23:02:40.5741 Trace Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-10 23:02:40.5741 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-10 23:02:40.5741 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-10 23:02:40.5741 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-10 23:02:40.5741 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-10 23:02:40.5741 Trace Initializing FileTarget(Name=logfile)
+2023-09-10 23:02:40.5906 Trace FindReachableObject<NLog.Layouts.Layout>:
+2023-09-10 23:02:40.5906 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-10 23:02:40.5906 Trace  Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-10 23:02:40.5906 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-10 23:02:40.5906 Trace FileTarget(Name=logfile) has 2 layouts
+2023-09-10 23:02:40.5906 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2023-09-10 23:02:40.5906 Info Configuration initialized.
+2023-09-11 13:36:06.4434 Debug Message Template Auto Format enabled
+2023-09-11 13:36:06.6902 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-11 13:36:06.6902 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-11 13:36:06.7185 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-11 13:36:06.7259 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-11 13:36:06.7400 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-11 13:36:06.7400 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-11 13:36:06.7400 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-11 13:36:06.7607 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-11 13:36:06.7704 Debug Adding target NLog.Targets.FileTarget(Name=logfile)
+2023-09-11 13:36:06.7704 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-09-11 13:36:06.7873 Trace ParseRulesElement
+2023-09-11 13:36:06.8447 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-11 13:36:06.8652 Debug Watching file-filter 'nlog.config' in directory: c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2
+2023-09-11 13:36:06.8652 Debug --- NLog configuration dump ---
+2023-09-11 13:36:06.8830 Debug Targets:
+2023-09-11 13:36:06.8830 Debug FileTarget(Name=logfile)
+2023-09-11 13:36:06.8974 Debug Rules:
+2023-09-11 13:36:06.8974 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2023-09-11 13:36:06.8974 Debug --- End of NLog configuration dump ---
+2023-09-11 13:36:06.9271 Trace FindReachableObject<System.Object>:
+2023-09-11 13:36:06.9271 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2023-09-11 13:36:06.9425 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2023-09-11 13:36:06.9425 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-11 13:36:06.9425 Trace   Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-11 13:36:06.9619 Trace   Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-11 13:36:06.9619 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-11 13:36:06.9727 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-11 13:36:06.9727 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-11 13:36:06.9880 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-11 13:36:06.9880 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-11 13:36:06.9880 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-11 13:36:07.0115 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-11 13:36:07.0115 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-11 13:36:07.0307 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-11 13:36:07.0377 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-11 13:36:07.0377 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-11 13:36:07.0526 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-11 13:36:07.0526 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2023-09-11 13:36:07.0715 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2023-09-11 13:36:07.0864 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2\nlog.config
+2023-09-11 13:36:07.1025 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2023-09-11 13:36:07.1261 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2023-09-11 13:36:07.1376 Trace Initializing Layout Renderer: ${message}
+2023-09-11 13:36:07.1476 Trace Initializing Layout Renderer: ${literal}
+2023-09-11 13:36:07.1632 Trace Initializing Layout Renderer: ${level}
+2023-09-11 13:36:07.1632 Trace Initializing Layout Renderer: ${literal}
+2023-09-11 13:36:07.1818 Trace Initializing Layout Renderer: ${longdate}
+2023-09-11 13:36:07.1909 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2023-09-11 13:36:07.2111 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-11 13:36:07.2111 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-11 13:36:07.2291 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-11 13:36:07.2393 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-11 13:36:07.2393 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-11 13:36:07.2576 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-11 13:36:07.2576 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-11 13:36:07.2759 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-11 13:36:07.2759 Trace Initializing Layout Renderer: ${literal}
+2023-09-11 13:36:07.2942 Trace Initializing Layout Renderer: ${shortdate}
+2023-09-11 13:36:07.3025 Trace Initializing Layout Renderer: ${literal}
+2023-09-11 13:36:07.3025 Trace Initializing c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt
+2023-09-11 13:36:07.3184 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-11 13:36:07.3184 Trace Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-11 13:36:07.3184 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-11 13:36:07.3423 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-11 13:36:07.3502 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-11 13:36:07.3502 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-11 13:36:07.3674 Trace Initializing FileTarget(Name=logfile)
+2023-09-11 13:36:07.3808 Trace FindReachableObject<NLog.Layouts.Layout>:
+2023-09-11 13:36:07.3808 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-11 13:36:07.4002 Trace  Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-11 13:36:07.4002 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-11 13:36:07.4175 Trace FileTarget(Name=logfile) has 2 layouts
+2023-09-11 13:36:07.4307 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2023-09-11 13:36:07.4466 Info Configuration initialized.
+2023-09-12 12:50:11.9289 Debug Message Template Auto Format enabled
+2023-09-12 12:50:12.2490 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-12 12:50:12.2667 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-12 12:50:12.2878 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-12 12:50:12.2973 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-12 12:50:12.3147 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-12 12:50:12.3147 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-12 12:50:12.3301 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-12 12:50:12.3301 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-12 12:50:12.3463 Debug Adding target NLog.Targets.FileTarget(Name=logfile)
+2023-09-12 12:50:12.3463 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-09-12 12:50:12.3628 Trace ParseRulesElement
+2023-09-12 12:50:12.4431 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-12 12:50:12.4700 Debug Watching file-filter 'nlog.config' in directory: c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2
+2023-09-12 12:50:12.4914 Debug --- NLog configuration dump ---
+2023-09-12 12:50:12.5042 Debug Targets:
+2023-09-12 12:50:12.5173 Debug FileTarget(Name=logfile)
+2023-09-12 12:50:12.5539 Debug Rules:
+2023-09-12 12:50:12.5832 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2023-09-12 12:50:12.6538 Debug --- End of NLog configuration dump ---
+2023-09-12 12:50:12.7734 Trace FindReachableObject<System.Object>:
+2023-09-12 12:50:12.7933 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2023-09-12 12:50:12.8812 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2023-09-12 12:50:12.9293 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-12 12:50:12.9817 Trace   Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-12 12:50:12.9910 Trace   Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-12 12:50:13.0092 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-12 12:50:13.0409 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-12 12:50:13.0506 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-12 12:50:13.0506 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-12 12:50:13.0708 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-12 12:50:13.0809 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-12 12:50:13.0809 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-12 12:50:13.1098 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-12 12:50:13.1098 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-12 12:50:13.1527 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-12 12:50:13.1685 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-12 12:50:13.1818 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-12 12:50:13.1985 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2023-09-12 12:50:13.2126 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2023-09-12 12:50:13.2424 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2\nlog.config
+2023-09-12 12:50:13.2622 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2023-09-12 12:50:13.3002 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2023-09-12 12:50:13.3134 Trace Initializing Layout Renderer: ${message}
+2023-09-12 12:50:13.3134 Trace Initializing Layout Renderer: ${literal}
+2023-09-12 12:50:13.3350 Trace Initializing Layout Renderer: ${level}
+2023-09-12 12:50:13.3484 Trace Initializing Layout Renderer: ${literal}
+2023-09-12 12:50:13.3611 Trace Initializing Layout Renderer: ${longdate}
+2023-09-12 12:50:13.3813 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2023-09-12 12:50:13.4198 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-12 12:50:13.4326 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-12 12:50:13.4425 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-12 12:50:13.4425 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-12 12:50:13.4629 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-12 12:50:13.4722 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-12 12:50:13.4722 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-12 12:50:13.4920 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-12 12:50:13.5071 Trace Initializing Layout Renderer: ${literal}
+2023-09-12 12:50:13.5071 Trace Initializing Layout Renderer: ${shortdate}
+2023-09-12 12:50:13.5257 Trace Initializing Layout Renderer: ${literal}
+2023-09-12 12:50:13.5362 Trace Initializing c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt
+2023-09-12 12:50:13.5495 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-12 12:50:13.5622 Trace Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-12 12:50:13.5622 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-12 12:50:13.5831 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-12 12:50:13.5952 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-12 12:50:13.6135 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-12 12:50:13.6254 Trace Initializing FileTarget(Name=logfile)
+2023-09-12 12:50:13.6418 Trace FindReachableObject<NLog.Layouts.Layout>:
+2023-09-12 12:50:13.6418 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-12 12:50:13.6624 Trace  Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-12 12:50:13.6720 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-12 12:50:13.6720 Trace FileTarget(Name=logfile) has 2 layouts
+2023-09-12 12:50:13.6982 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2023-09-12 12:50:13.7165 Info Configuration initialized.
+2023-09-12 17:21:20.9670 Debug Message Template Auto Format enabled
+2023-09-12 17:21:21.4097 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-12 17:21:21.4298 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-12 17:21:21.4491 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-12 17:21:21.4491 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-12 17:21:21.4995 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-12 17:21:21.5293 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-12 17:21:21.5543 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-12 17:21:21.5720 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-12 17:21:21.5927 Debug Adding target NLog.Targets.FileTarget(Name=logfile)
+2023-09-12 17:21:21.6179 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-09-12 17:21:21.6464 Trace ParseRulesElement
+2023-09-12 17:21:21.8116 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-12 17:21:21.8516 Debug Watching file-filter 'nlog.config' in directory: c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2
+2023-09-12 17:21:21.8651 Debug --- NLog configuration dump ---
+2023-09-12 17:21:21.8803 Debug Targets:
+2023-09-12 17:21:21.8930 Debug FileTarget(Name=logfile)
+2023-09-12 17:21:21.9035 Debug Rules:
+2023-09-12 17:21:21.9189 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2023-09-12 17:21:21.9189 Debug --- End of NLog configuration dump ---
+2023-09-12 17:21:21.9598 Trace FindReachableObject<System.Object>:
+2023-09-12 17:21:21.9708 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2023-09-12 17:21:21.9865 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2023-09-12 17:21:22.0093 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-12 17:21:22.0093 Trace   Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-12 17:21:22.0335 Trace   Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-12 17:21:22.0492 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-12 17:21:22.0608 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-12 17:21:22.0718 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-12 17:21:22.0718 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-12 17:21:22.0960 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-12 17:21:22.1063 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-12 17:21:22.1063 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-12 17:21:22.1264 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-12 17:21:22.1392 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-12 17:21:22.1506 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-12 17:21:22.1506 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-12 17:21:22.1720 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-12 17:21:22.1834 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2023-09-12 17:21:22.1834 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2023-09-12 17:21:22.2108 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2\nlog.config
+2023-09-12 17:21:22.2290 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2023-09-12 17:21:22.2531 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2023-09-12 17:21:22.2617 Trace Initializing Layout Renderer: ${message}
+2023-09-12 17:21:22.2744 Trace Initializing Layout Renderer: ${literal}
+2023-09-12 17:21:22.2744 Trace Initializing Layout Renderer: ${level}
+2023-09-12 17:21:22.2947 Trace Initializing Layout Renderer: ${literal}
+2023-09-12 17:21:22.3074 Trace Initializing Layout Renderer: ${longdate}
+2023-09-12 17:21:22.3074 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2023-09-12 17:21:22.3410 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-12 17:21:22.3410 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-12 17:21:22.3595 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-12 17:21:22.3702 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-12 17:21:22.3702 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-12 17:21:22.3899 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-12 17:21:22.3998 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-12 17:21:22.3998 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-12 17:21:22.4224 Trace Initializing Layout Renderer: ${literal}
+2023-09-12 17:21:22.4331 Trace Initializing Layout Renderer: ${shortdate}
+2023-09-12 17:21:22.4331 Trace Initializing Layout Renderer: ${literal}
+2023-09-12 17:21:22.4563 Trace Initializing c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt
+2023-09-12 17:21:22.4689 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-12 17:21:22.4797 Trace Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-12 17:21:22.4797 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-12 17:21:22.4974 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-12 17:21:22.4974 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-12 17:21:22.5148 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-12 17:21:22.5245 Trace Initializing FileTarget(Name=logfile)
+2023-09-12 17:21:22.5245 Trace FindReachableObject<NLog.Layouts.Layout>:
+2023-09-12 17:21:22.5494 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-12 17:21:22.5579 Trace  Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-12 17:21:22.5579 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-12 17:21:22.5772 Trace FileTarget(Name=logfile) has 2 layouts
+2023-09-12 17:21:22.5912 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2023-09-12 17:21:22.6063 Info Configuration initialized.
+2023-09-13 14:12:01.2043 Debug Message Template Auto Format enabled
+2023-09-13 14:12:01.4984 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 14:12:01.5118 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-13 14:12:01.5229 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 14:12:01.5314 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-13 14:12:01.5314 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 14:12:01.5549 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-13 14:12:01.5637 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 14:12:01.5637 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-13 14:12:01.5803 Debug Adding target NLog.Targets.FileTarget(Name=logfile)
+2023-09-13 14:12:01.5803 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-09-13 14:12:01.5939 Trace ParseRulesElement
+2023-09-13 14:12:01.6375 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-13 14:12:01.6575 Debug Watching file-filter 'nlog.config' in directory: c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2
+2023-09-13 14:12:01.6714 Debug --- NLog configuration dump ---
+2023-09-13 14:12:01.6714 Debug Targets:
+2023-09-13 14:12:01.6895 Debug FileTarget(Name=logfile)
+2023-09-13 14:12:01.6895 Debug Rules:
+2023-09-13 14:12:01.6895 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2023-09-13 14:12:01.7087 Debug --- End of NLog configuration dump ---
+2023-09-13 14:12:01.7280 Trace FindReachableObject<System.Object>:
+2023-09-13 14:12:01.7359 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2023-09-13 14:12:01.7359 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2023-09-13 14:12:01.7513 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-13 14:12:01.7513 Trace   Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-13 14:12:01.7513 Trace   Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-13 14:12:01.7704 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-13 14:12:01.7801 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 14:12:01.7801 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-13 14:12:01.7950 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 14:12:01.7950 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-13 14:12:01.7950 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-13 14:12:01.8176 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-13 14:12:01.8247 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-13 14:12:01.8247 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 14:12:01.8247 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-13 14:12:01.8423 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 14:12:01.8423 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-13 14:12:01.8423 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2023-09-13 14:12:01.8594 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2023-09-13 14:12:01.8594 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2\nlog.config
+2023-09-13 14:12:01.8751 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2023-09-13 14:12:01.8751 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2023-09-13 14:12:01.8961 Trace Initializing Layout Renderer: ${message}
+2023-09-13 14:12:01.8961 Trace Initializing Layout Renderer: ${literal}
+2023-09-13 14:12:01.9108 Trace Initializing Layout Renderer: ${level}
+2023-09-13 14:12:01.9108 Trace Initializing Layout Renderer: ${literal}
+2023-09-13 14:12:01.9263 Trace Initializing Layout Renderer: ${longdate}
+2023-09-13 14:12:01.9356 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2023-09-13 14:12:01.9356 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 14:12:01.9540 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-13 14:12:01.9540 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-13 14:12:01.9540 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-13 14:12:01.9734 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 14:12:01.9734 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-13 14:12:01.9908 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 14:12:02.0011 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-13 14:12:02.0011 Trace Initializing Layout Renderer: ${literal}
+2023-09-13 14:12:02.0230 Trace Initializing Layout Renderer: ${shortdate}
+2023-09-13 14:12:02.0230 Trace Initializing Layout Renderer: ${literal}
+2023-09-13 14:12:02.0385 Trace Initializing c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt
+2023-09-13 14:12:02.0385 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 14:12:02.0511 Trace Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-13 14:12:02.0511 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-13 14:12:02.0511 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 14:12:02.0697 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-13 14:12:02.0752 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 14:12:02.0752 Trace Initializing FileTarget(Name=logfile)
+2023-09-13 14:12:02.0752 Trace FindReachableObject<NLog.Layouts.Layout>:
+2023-09-13 14:12:02.0752 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-13 14:12:02.0978 Trace  Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-13 14:12:02.0978 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-13 14:12:02.1121 Trace FileTarget(Name=logfile) has 2 layouts
+2023-09-13 14:12:02.1121 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2023-09-13 14:12:02.1302 Info Configuration initialized.
+2023-09-13 14:14:31.7058 Debug Targets configured when LogLevel >= Debug for Logger: BackendApi2.LoggerService.LoggerManager
+2023-09-13 14:14:31.7204 Debug Logger BackendApi2.LoggerService.LoggerManager [Debug] => logfile
+2023-09-13 14:14:31.8224 Debug Logger BackendApi2.LoggerService.LoggerManager [Info] => logfile
+2023-09-13 14:14:31.8366 Debug Logger BackendApi2.LoggerService.LoggerManager [Warn] => logfile
+2023-09-13 14:14:31.8574 Debug Logger BackendApi2.LoggerService.LoggerManager [Error] => logfile
+2023-09-13 14:14:31.9211 Debug Logger BackendApi2.LoggerService.LoggerManager [Fatal] => logfile
+2023-09-13 14:14:32.0315 Debug FileTarget(Name=logfile): Preparing for new file: 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/2023-09-13_logfile.txt'
+2023-09-13 14:14:32.0728 Debug FileTarget(Name=logfile): Creating file appender: 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/2023-09-13_logfile.txt'
+2023-09-13 14:14:32.1034 Trace FileTarget(Name=logfile): Opening c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/2023-09-13_logfile.txt with allowFileSharedWriting=False
+2023-09-13 14:32:19.6982 Debug Message Template Auto Format enabled
+2023-09-13 14:32:19.9728 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 14:32:19.9943 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-13 14:32:20.0042 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 14:32:20.0042 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-13 14:32:20.0042 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 14:32:20.0278 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-13 14:32:20.0339 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 14:32:20.0339 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-13 14:32:20.0339 Debug Adding target NLog.Targets.FileTarget(Name=logfile)
+2023-09-13 14:32:20.0518 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-09-13 14:32:20.0518 Trace ParseRulesElement
+2023-09-13 14:32:20.1371 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-13 14:32:20.1586 Debug Watching file-filter 'nlog.config' in directory: c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2
+2023-09-13 14:32:20.1586 Debug --- NLog configuration dump ---
+2023-09-13 14:32:20.1586 Debug Targets:
+2023-09-13 14:32:20.1756 Debug FileTarget(Name=logfile)
+2023-09-13 14:32:20.1756 Debug Rules:
+2023-09-13 14:32:20.1756 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2023-09-13 14:32:20.1942 Debug --- End of NLog configuration dump ---
+2023-09-13 14:32:20.2132 Trace FindReachableObject<System.Object>:
+2023-09-13 14:32:20.2195 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2023-09-13 14:32:20.2195 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2023-09-13 14:32:20.2195 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-13 14:32:20.2387 Trace   Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-13 14:32:20.2387 Trace   Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-13 14:32:20.2387 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-13 14:32:20.2387 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 14:32:20.2387 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-13 14:32:20.2387 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 14:32:20.2618 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-13 14:32:20.2618 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-13 14:32:20.2618 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-13 14:32:20.2618 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-13 14:32:20.2768 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 14:32:20.2768 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-13 14:32:20.2768 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 14:32:20.2768 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-13 14:32:20.2768 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2023-09-13 14:32:20.2953 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2023-09-13 14:32:20.2953 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2\nlog.config
+2023-09-13 14:32:20.3114 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2023-09-13 14:32:20.3114 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2023-09-13 14:32:20.3114 Trace Initializing Layout Renderer: ${message}
+2023-09-13 14:32:20.3301 Trace Initializing Layout Renderer: ${literal}
+2023-09-13 14:32:20.3301 Trace Initializing Layout Renderer: ${level}
+2023-09-13 14:32:20.3301 Trace Initializing Layout Renderer: ${literal}
+2023-09-13 14:32:20.3411 Trace Initializing Layout Renderer: ${longdate}
+2023-09-13 14:32:20.3411 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2023-09-13 14:32:20.3411 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 14:32:20.3411 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-13 14:32:20.3619 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-13 14:32:20.3678 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-13 14:32:20.3678 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 14:32:20.3777 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-13 14:32:20.3777 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 14:32:20.3777 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-13 14:32:20.3777 Trace Initializing Layout Renderer: ${literal}
+2023-09-13 14:32:20.4025 Trace Initializing Layout Renderer: ${shortdate}
+2023-09-13 14:32:20.4025 Trace Initializing Layout Renderer: ${literal}
+2023-09-13 14:32:20.4025 Trace Initializing c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt
+2023-09-13 14:32:20.4168 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 14:32:20.4168 Trace Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-13 14:32:20.4168 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-13 14:32:20.4168 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 14:32:20.4328 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-13 14:32:20.4328 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 14:32:20.4328 Trace Initializing FileTarget(Name=logfile)
+2023-09-13 14:32:20.4530 Trace FindReachableObject<NLog.Layouts.Layout>:
+2023-09-13 14:32:20.4530 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-13 14:32:20.4530 Trace  Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-13 14:32:20.4650 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-13 14:32:20.4650 Trace FileTarget(Name=logfile) has 2 layouts
+2023-09-13 14:32:20.4650 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2023-09-13 14:32:20.4801 Info Configuration initialized.
+2023-09-13 14:35:17.2440 Debug Targets configured when LogLevel >= Debug for Logger: BackendApi2.LoggerService.LoggerManager
+2023-09-13 14:35:17.2440 Debug Logger BackendApi2.LoggerService.LoggerManager [Debug] => logfile
+2023-09-13 14:35:17.2673 Debug Logger BackendApi2.LoggerService.LoggerManager [Info] => logfile
+2023-09-13 14:35:17.2673 Debug Logger BackendApi2.LoggerService.LoggerManager [Warn] => logfile
+2023-09-13 14:35:17.2673 Debug Logger BackendApi2.LoggerService.LoggerManager [Error] => logfile
+2023-09-13 14:35:17.2926 Debug Logger BackendApi2.LoggerService.LoggerManager [Fatal] => logfile
+2023-09-13 14:35:17.3828 Debug FileTarget(Name=logfile): Preparing for new file: 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/2023-09-13_logfile.txt'
+2023-09-13 14:35:17.4247 Debug FileTarget(Name=logfile): Creating file appender: 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/2023-09-13_logfile.txt'
+2023-09-13 14:35:17.4247 Trace FileTarget(Name=logfile): Opening c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/2023-09-13_logfile.txt with allowFileSharedWriting=False
+2023-09-13 15:21:32.6207 Debug Message Template Auto Format enabled
+2023-09-13 15:21:32.7204 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 15:21:32.7271 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-13 15:21:32.7271 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 15:21:32.7271 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-13 15:21:32.7271 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 15:21:32.7400 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-13 15:21:32.7400 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 15:21:32.7400 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-13 15:21:32.7400 Debug Adding target NLog.Targets.FileTarget(Name=logfile)
+2023-09-13 15:21:32.7400 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-09-13 15:21:32.7400 Trace ParseRulesElement
+2023-09-13 15:21:32.7735 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-13 15:21:32.7735 Debug Watching file-filter 'nlog.config' in directory: c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2
+2023-09-13 15:21:32.7735 Debug --- NLog configuration dump ---
+2023-09-13 15:21:32.7853 Debug Targets:
+2023-09-13 15:21:32.7853 Debug FileTarget(Name=logfile)
+2023-09-13 15:21:32.7853 Debug Rules:
+2023-09-13 15:21:32.7853 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2023-09-13 15:21:32.7853 Debug --- End of NLog configuration dump ---
+2023-09-13 15:21:32.7853 Trace FindReachableObject<System.Object>:
+2023-09-13 15:21:32.7853 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2023-09-13 15:21:32.7853 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2023-09-13 15:21:32.7853 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-13 15:21:32.7853 Trace   Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-13 15:21:32.8097 Trace   Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-13 15:21:32.8097 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-13 15:21:32.8097 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 15:21:32.8097 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-13 15:21:32.8097 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 15:21:32.8097 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-13 15:21:32.8097 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-13 15:21:32.8097 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-13 15:21:32.8097 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-13 15:21:32.8097 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 15:21:32.8097 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-13 15:21:32.8279 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 15:21:32.8279 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-13 15:21:32.8317 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2023-09-13 15:21:32.8317 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2023-09-13 15:21:32.8317 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2\nlog.config
+2023-09-13 15:21:32.8317 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2023-09-13 15:21:32.8465 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2023-09-13 15:21:32.8465 Trace Initializing Layout Renderer: ${message}
+2023-09-13 15:21:32.8465 Trace Initializing Layout Renderer: ${literal}
+2023-09-13 15:21:32.8465 Trace Initializing Layout Renderer: ${level}
+2023-09-13 15:21:32.8465 Trace Initializing Layout Renderer: ${literal}
+2023-09-13 15:21:32.8465 Trace Initializing Layout Renderer: ${longdate}
+2023-09-13 15:21:32.8465 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2023-09-13 15:21:32.8465 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 15:21:32.8465 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-13 15:21:32.8628 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-13 15:21:32.8628 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-13 15:21:32.8628 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 15:21:32.8628 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-13 15:21:32.8628 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 15:21:32.8628 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-13 15:21:32.8628 Trace Initializing Layout Renderer: ${literal}
+2023-09-13 15:21:32.8628 Trace Initializing Layout Renderer: ${shortdate}
+2023-09-13 15:21:32.8628 Trace Initializing Layout Renderer: ${literal}
+2023-09-13 15:21:32.8628 Trace Initializing c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt
+2023-09-13 15:21:32.8628 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 15:21:32.8628 Trace Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-13 15:21:32.8628 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-13 15:21:32.8628 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 15:21:32.8628 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-13 15:21:32.8628 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 15:21:32.8628 Trace Initializing FileTarget(Name=logfile)
+2023-09-13 15:21:32.8922 Trace FindReachableObject<NLog.Layouts.Layout>:
+2023-09-13 15:21:32.8922 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-13 15:21:32.8922 Trace  Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-13 15:21:32.8922 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-13 15:21:32.8922 Trace FileTarget(Name=logfile) has 2 layouts
+2023-09-13 15:21:32.8922 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2023-09-13 15:21:32.9092 Info Configuration initialized.
+2023-09-13 15:25:30.4402 Debug Message Template Auto Format enabled
+2023-09-13 15:25:30.5546 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 15:25:30.5546 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-13 15:25:30.5691 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 15:25:30.5691 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-13 15:25:30.5691 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 15:25:30.5840 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-13 15:25:30.5840 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 15:25:30.5840 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-13 15:25:30.5840 Debug Adding target NLog.Targets.FileTarget(Name=logfile)
+2023-09-13 15:25:30.5999 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-09-13 15:25:30.5999 Trace ParseRulesElement
+2023-09-13 15:25:30.6290 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-13 15:25:30.6290 Debug Watching file-filter 'nlog.config' in directory: c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2
+2023-09-13 15:25:30.6442 Debug --- NLog configuration dump ---
+2023-09-13 15:25:30.6442 Debug Targets:
+2023-09-13 15:25:30.6442 Debug FileTarget(Name=logfile)
+2023-09-13 15:25:30.6442 Debug Rules:
+2023-09-13 15:25:30.6637 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2023-09-13 15:25:30.6637 Debug --- End of NLog configuration dump ---
+2023-09-13 15:25:30.6781 Trace FindReachableObject<System.Object>:
+2023-09-13 15:25:30.6781 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2023-09-13 15:25:30.6781 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2023-09-13 15:25:30.6920 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-13 15:25:30.6920 Trace   Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-13 15:25:30.6920 Trace   Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-13 15:25:30.6920 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-13 15:25:30.7071 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 15:25:30.7071 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-13 15:25:30.7071 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 15:25:30.7071 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-13 15:25:30.7219 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-13 15:25:30.7219 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-13 15:25:30.7219 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-13 15:25:30.7219 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 15:25:30.7219 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-13 15:25:30.7389 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 15:25:30.7389 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-13 15:25:30.7389 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2023-09-13 15:25:30.7389 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2023-09-13 15:25:30.7543 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2\nlog.config
+2023-09-13 15:25:30.7543 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2023-09-13 15:25:30.7543 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2023-09-13 15:25:30.7699 Trace Initializing Layout Renderer: ${message}
+2023-09-13 15:25:30.7699 Trace Initializing Layout Renderer: ${literal}
+2023-09-13 15:25:30.7699 Trace Initializing Layout Renderer: ${level}
+2023-09-13 15:25:30.7699 Trace Initializing Layout Renderer: ${literal}
+2023-09-13 15:25:30.7699 Trace Initializing Layout Renderer: ${longdate}
+2023-09-13 15:25:30.7855 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2023-09-13 15:25:30.7855 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 15:25:30.7855 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-13 15:25:30.7855 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-13 15:25:30.8023 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-13 15:25:30.8023 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 15:25:30.8023 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-13 15:25:30.8023 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 15:25:30.8023 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-13 15:25:30.8193 Trace Initializing Layout Renderer: ${literal}
+2023-09-13 15:25:30.8193 Trace Initializing Layout Renderer: ${shortdate}
+2023-09-13 15:25:30.8193 Trace Initializing Layout Renderer: ${literal}
+2023-09-13 15:25:30.8193 Trace Initializing c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt
+2023-09-13 15:25:30.8343 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 15:25:30.8343 Trace Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-13 15:25:30.8343 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-13 15:25:30.8343 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 15:25:30.8481 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-13 15:25:30.8481 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 15:25:30.8481 Trace Initializing FileTarget(Name=logfile)
+2023-09-13 15:25:30.8481 Trace FindReachableObject<NLog.Layouts.Layout>:
+2023-09-13 15:25:30.8481 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-13 15:25:30.8663 Trace  Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-13 15:25:30.8663 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-13 15:25:30.8663 Trace FileTarget(Name=logfile) has 2 layouts
+2023-09-13 15:25:30.8793 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2023-09-13 15:25:30.8793 Info Configuration initialized.
+2023-09-13 16:24:18.1768 Debug Message Template Auto Format enabled
+2023-09-13 16:24:18.5179 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 16:24:18.5353 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-13 16:24:18.5515 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 16:24:18.5616 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-13 16:24:18.5831 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 16:24:18.5925 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-13 16:24:18.6045 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 16:24:18.6159 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-13 16:24:18.6159 Debug Adding target NLog.Targets.FileTarget(Name=logfile)
+2023-09-13 16:24:18.6427 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-09-13 16:24:18.6578 Trace ParseRulesElement
+2023-09-13 16:24:18.7459 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-13 16:24:18.7780 Debug Watching file-filter 'nlog.config' in directory: c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2
+2023-09-13 16:24:18.7938 Debug --- NLog configuration dump ---
+2023-09-13 16:24:18.8042 Debug Targets:
+2023-09-13 16:24:18.8042 Debug FileTarget(Name=logfile)
+2023-09-13 16:24:18.8245 Debug Rules:
+2023-09-13 16:24:18.8398 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2023-09-13 16:24:18.8398 Debug --- End of NLog configuration dump ---
+2023-09-13 16:24:18.8756 Trace FindReachableObject<System.Object>:
+2023-09-13 16:24:18.8938 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2023-09-13 16:24:18.9146 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2023-09-13 16:24:18.9407 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-13 16:24:18.9608 Trace   Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-13 16:24:18.9767 Trace   Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-13 16:24:18.9916 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-13 16:24:19.0064 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 16:24:19.0064 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-13 16:24:19.0340 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 16:24:19.0450 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-13 16:24:19.0561 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-13 16:24:19.0672 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-13 16:24:19.0672 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-13 16:24:19.0858 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 16:24:19.0858 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-13 16:24:19.1177 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 16:24:19.1321 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-13 16:24:19.1525 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2023-09-13 16:24:19.1640 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2023-09-13 16:24:19.1834 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2\nlog.config
+2023-09-13 16:24:19.2014 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2023-09-13 16:24:19.2262 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2023-09-13 16:24:19.2380 Trace Initializing Layout Renderer: ${message}
+2023-09-13 16:24:19.2491 Trace Initializing Layout Renderer: ${literal}
+2023-09-13 16:24:19.2586 Trace Initializing Layout Renderer: ${level}
+2023-09-13 16:24:19.2586 Trace Initializing Layout Renderer: ${literal}
+2023-09-13 16:24:19.2768 Trace Initializing Layout Renderer: ${longdate}
+2023-09-13 16:24:19.2863 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2023-09-13 16:24:19.3041 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 16:24:19.3041 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-13 16:24:19.3196 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-13 16:24:19.3196 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-13 16:24:19.3391 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 16:24:19.3500 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-13 16:24:19.3500 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 16:24:19.3698 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-13 16:24:19.3869 Trace Initializing Layout Renderer: ${literal}
+2023-09-13 16:24:19.3999 Trace Initializing Layout Renderer: ${shortdate}
+2023-09-13 16:24:19.3999 Trace Initializing Layout Renderer: ${literal}
+2023-09-13 16:24:19.4218 Trace Initializing c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt
+2023-09-13 16:24:19.4327 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-13 16:24:19.4327 Trace Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-13 16:24:19.4512 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-13 16:24:19.4512 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 16:24:19.4736 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-13 16:24:19.4907 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-13 16:24:19.4907 Trace Initializing FileTarget(Name=logfile)
+2023-09-13 16:24:19.5210 Trace FindReachableObject<NLog.Layouts.Layout>:
+2023-09-13 16:24:19.5210 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-13 16:24:19.5417 Trace  Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-13 16:24:19.5528 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-13 16:24:19.5528 Trace FileTarget(Name=logfile) has 2 layouts
+2023-09-13 16:24:19.5790 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2023-09-13 16:24:19.5969 Info Configuration initialized.
+2023-09-14 18:35:12.3001 Debug Message Template Auto Format enabled
+2023-09-14 18:35:12.4394 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:35:12.4394 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-14 18:35:12.4394 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:35:12.4514 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-14 18:35:12.4514 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:35:12.4514 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-14 18:35:12.4514 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:35:12.4514 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-14 18:35:12.4514 Debug Adding target NLog.Targets.FileTarget(Name=logfile)
+2023-09-14 18:35:12.4673 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-09-14 18:35:12.4673 Trace ParseRulesElement
+2023-09-14 18:35:12.4919 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-14 18:35:12.5022 Debug Watching file-filter 'nlog.config' in directory: c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2
+2023-09-14 18:35:12.5022 Debug --- NLog configuration dump ---
+2023-09-14 18:35:12.5022 Debug Targets:
+2023-09-14 18:35:12.5022 Debug FileTarget(Name=logfile)
+2023-09-14 18:35:12.5022 Debug Rules:
+2023-09-14 18:35:12.5138 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2023-09-14 18:35:12.5138 Debug --- End of NLog configuration dump ---
+2023-09-14 18:35:12.5138 Trace FindReachableObject<System.Object>:
+2023-09-14 18:35:12.5138 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2023-09-14 18:35:12.5138 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2023-09-14 18:35:12.5285 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-14 18:35:12.5285 Trace   Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-14 18:35:12.5285 Trace   Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-14 18:35:12.5285 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 18:35:12.5285 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:35:12.5285 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-14 18:35:12.5285 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:35:12.5285 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-14 18:35:12.5445 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-14 18:35:12.5445 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 18:35:12.5445 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-14 18:35:12.5445 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:35:12.5445 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-14 18:35:12.5445 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:35:12.5445 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-14 18:35:12.5597 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2023-09-14 18:35:12.5597 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2023-09-14 18:35:12.5597 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2\nlog.config
+2023-09-14 18:35:12.5597 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2023-09-14 18:35:12.5755 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2023-09-14 18:35:12.5755 Trace Initializing Layout Renderer: ${message}
+2023-09-14 18:35:12.5755 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 18:35:12.5755 Trace Initializing Layout Renderer: ${level}
+2023-09-14 18:35:12.5755 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 18:35:12.5755 Trace Initializing Layout Renderer: ${longdate}
+2023-09-14 18:35:12.5755 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2023-09-14 18:35:12.5908 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:35:12.5908 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-14 18:35:12.5908 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 18:35:12.5908 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-14 18:35:12.5908 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:35:12.5908 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-14 18:35:12.5908 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:35:12.5908 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-14 18:35:12.5908 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 18:35:12.6075 Trace Initializing Layout Renderer: ${shortdate}
+2023-09-14 18:35:12.6075 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 18:35:12.6075 Trace Initializing c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt
+2023-09-14 18:35:12.6075 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:35:12.6075 Trace Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-14 18:35:12.6075 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 18:35:12.6075 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:35:12.6075 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-14 18:35:12.6223 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:35:12.6223 Trace Initializing FileTarget(Name=logfile)
+2023-09-14 18:35:12.6223 Trace FindReachableObject<NLog.Layouts.Layout>:
+2023-09-14 18:35:12.6223 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-14 18:35:12.6223 Trace  Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-14 18:35:12.6223 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-14 18:35:12.6223 Trace FileTarget(Name=logfile) has 2 layouts
+2023-09-14 18:35:12.6395 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2023-09-14 18:35:12.6395 Info Configuration initialized.
+2023-09-14 18:39:16.4828 Debug Message Template Auto Format enabled
+2023-09-14 18:39:16.5874 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:39:16.5914 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-14 18:39:16.5914 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:39:16.5914 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-14 18:39:16.5914 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:39:16.5914 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-14 18:39:16.6068 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:39:16.6068 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-14 18:39:16.6068 Debug Adding target NLog.Targets.FileTarget(Name=logfile)
+2023-09-14 18:39:16.6068 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-09-14 18:39:16.6068 Trace ParseRulesElement
+2023-09-14 18:39:16.6395 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-14 18:39:16.6395 Debug Watching file-filter 'nlog.config' in directory: c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2
+2023-09-14 18:39:16.6548 Debug --- NLog configuration dump ---
+2023-09-14 18:39:16.6548 Debug Targets:
+2023-09-14 18:39:16.6548 Debug FileTarget(Name=logfile)
+2023-09-14 18:39:16.6548 Debug Rules:
+2023-09-14 18:39:16.6548 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2023-09-14 18:39:16.6686 Debug --- End of NLog configuration dump ---
+2023-09-14 18:39:16.6686 Trace FindReachableObject<System.Object>:
+2023-09-14 18:39:16.6686 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2023-09-14 18:39:16.6686 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2023-09-14 18:39:16.6854 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-14 18:39:16.6854 Trace   Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-14 18:39:16.6854 Trace   Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-14 18:39:16.6854 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 18:39:16.6854 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:39:16.6854 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-14 18:39:16.7015 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:39:16.7015 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-14 18:39:16.7015 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-14 18:39:16.7015 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 18:39:16.7015 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-14 18:39:16.7015 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:39:16.7015 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-14 18:39:16.7162 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:39:16.7162 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-14 18:39:16.7162 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2023-09-14 18:39:16.7162 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2023-09-14 18:39:16.7162 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2\nlog.config
+2023-09-14 18:39:16.7331 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2023-09-14 18:39:16.7331 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2023-09-14 18:39:16.7331 Trace Initializing Layout Renderer: ${message}
+2023-09-14 18:39:16.7331 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 18:39:16.7331 Trace Initializing Layout Renderer: ${level}
+2023-09-14 18:39:16.7463 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 18:39:16.7463 Trace Initializing Layout Renderer: ${longdate}
+2023-09-14 18:39:16.7463 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2023-09-14 18:39:16.7463 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:39:16.7463 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-14 18:39:16.7463 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 18:39:16.7463 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-14 18:39:16.7625 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:39:16.7625 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-14 18:39:16.7625 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:39:16.7625 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-14 18:39:16.7625 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 18:39:16.7625 Trace Initializing Layout Renderer: ${shortdate}
+2023-09-14 18:39:16.7625 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 18:39:16.7625 Trace Initializing c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt
+2023-09-14 18:39:16.7781 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:39:16.7781 Trace Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-14 18:39:16.7781 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 18:39:16.7781 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:39:16.7781 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-14 18:39:16.7781 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:39:16.7781 Trace Initializing FileTarget(Name=logfile)
+2023-09-14 18:39:16.7945 Trace FindReachableObject<NLog.Layouts.Layout>:
+2023-09-14 18:39:16.7945 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-14 18:39:16.7945 Trace  Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-14 18:39:16.7945 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-14 18:39:16.7945 Trace FileTarget(Name=logfile) has 2 layouts
+2023-09-14 18:39:16.7945 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2023-09-14 18:39:16.7945 Info Configuration initialized.
+2023-09-14 18:44:51.2787 Debug Targets configured when LogLevel >= Debug for Logger: BackendApi2.LoggerService.LoggerManager
+2023-09-14 18:44:51.2787 Debug Logger BackendApi2.LoggerService.LoggerManager [Debug] => logfile
+2023-09-14 18:44:51.2787 Debug Logger BackendApi2.LoggerService.LoggerManager [Info] => logfile
+2023-09-14 18:44:51.2787 Debug Logger BackendApi2.LoggerService.LoggerManager [Warn] => logfile
+2023-09-14 18:44:51.2787 Debug Logger BackendApi2.LoggerService.LoggerManager [Error] => logfile
+2023-09-14 18:44:51.2948 Debug Logger BackendApi2.LoggerService.LoggerManager [Fatal] => logfile
+2023-09-14 18:44:51.3210 Debug FileTarget(Name=logfile): Preparing for new file: 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/2023-09-14_logfile.txt'
+2023-09-14 18:44:51.3300 Debug FileTarget(Name=logfile): Creating file appender: 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/2023-09-14_logfile.txt'
+2023-09-14 18:44:51.3300 Trace FileTarget(Name=logfile): Opening c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/2023-09-14_logfile.txt with allowFileSharedWriting=False
+2023-09-14 18:54:30.1699 Debug Message Template Auto Format enabled
+2023-09-14 18:54:30.3274 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:54:30.3274 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-14 18:54:30.3274 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:54:30.3416 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-14 18:54:30.3416 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:54:30.3416 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-14 18:54:30.3416 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:54:30.3565 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-14 18:54:30.3565 Debug Adding target NLog.Targets.FileTarget(Name=logfile)
+2023-09-14 18:54:30.3565 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-09-14 18:54:30.3565 Trace ParseRulesElement
+2023-09-14 18:54:30.3998 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-14 18:54:30.4124 Debug Watching file-filter 'nlog.config' in directory: c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2
+2023-09-14 18:54:30.4124 Debug --- NLog configuration dump ---
+2023-09-14 18:54:30.4192 Debug Targets:
+2023-09-14 18:54:30.4192 Debug FileTarget(Name=logfile)
+2023-09-14 18:54:30.4192 Debug Rules:
+2023-09-14 18:54:30.4192 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2023-09-14 18:54:30.4347 Debug --- End of NLog configuration dump ---
+2023-09-14 18:54:30.4347 Trace FindReachableObject<System.Object>:
+2023-09-14 18:54:30.4347 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2023-09-14 18:54:30.4505 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2023-09-14 18:54:30.4505 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-14 18:54:30.4505 Trace   Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-14 18:54:30.4505 Trace   Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-14 18:54:30.4505 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 18:54:30.4678 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:54:30.4678 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-14 18:54:30.4678 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:54:30.4678 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-14 18:54:30.4678 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-14 18:54:30.4834 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 18:54:30.4834 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-14 18:54:30.4834 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:54:30.4834 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-14 18:54:30.4834 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:54:30.4979 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-14 18:54:30.4979 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2023-09-14 18:54:30.4979 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2023-09-14 18:54:30.4979 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2\nlog.config
+2023-09-14 18:54:30.5164 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2023-09-14 18:54:30.5164 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2023-09-14 18:54:30.5289 Trace Initializing Layout Renderer: ${message}
+2023-09-14 18:54:30.5289 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 18:54:30.5289 Trace Initializing Layout Renderer: ${level}
+2023-09-14 18:54:30.5289 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 18:54:30.5289 Trace Initializing Layout Renderer: ${longdate}
+2023-09-14 18:54:30.5446 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2023-09-14 18:54:30.5446 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:54:30.5446 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-14 18:54:30.5446 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 18:54:30.5446 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-14 18:54:30.5598 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:54:30.5598 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-14 18:54:30.5598 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:54:30.5598 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-14 18:54:30.5598 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 18:54:30.5598 Trace Initializing Layout Renderer: ${shortdate}
+2023-09-14 18:54:30.5761 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 18:54:30.5761 Trace Initializing c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt
+2023-09-14 18:54:30.5761 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:54:30.5761 Trace Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-14 18:54:30.5761 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 18:54:30.5761 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:54:30.5903 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-14 18:54:30.5903 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:54:30.5903 Trace Initializing FileTarget(Name=logfile)
+2023-09-14 18:54:30.5903 Trace FindReachableObject<NLog.Layouts.Layout>:
+2023-09-14 18:54:30.5903 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-14 18:54:30.6065 Trace  Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-14 18:54:30.6065 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-14 18:54:30.6065 Trace FileTarget(Name=logfile) has 2 layouts
+2023-09-14 18:54:30.6065 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2023-09-14 18:54:30.6065 Info Configuration initialized.
+2023-09-14 18:57:08.1145 Debug Message Template Auto Format enabled
+2023-09-14 18:57:08.2442 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:57:08.2535 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-14 18:57:08.2535 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:57:08.2535 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-14 18:57:08.2686 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:57:08.2686 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-14 18:57:08.2686 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:57:08.2686 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-14 18:57:08.2796 Debug Adding target NLog.Targets.FileTarget(Name=logfile)
+2023-09-14 18:57:08.2796 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-09-14 18:57:08.2796 Trace ParseRulesElement
+2023-09-14 18:57:08.3152 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-14 18:57:08.3262 Debug Watching file-filter 'nlog.config' in directory: c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2
+2023-09-14 18:57:08.3262 Debug --- NLog configuration dump ---
+2023-09-14 18:57:08.3262 Debug Targets:
+2023-09-14 18:57:08.3262 Debug FileTarget(Name=logfile)
+2023-09-14 18:57:08.3262 Debug Rules:
+2023-09-14 18:57:08.3454 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2023-09-14 18:57:08.3454 Debug --- End of NLog configuration dump ---
+2023-09-14 18:57:08.3454 Trace FindReachableObject<System.Object>:
+2023-09-14 18:57:08.3596 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2023-09-14 18:57:08.3596 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2023-09-14 18:57:08.3596 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-14 18:57:08.3733 Trace   Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-14 18:57:08.3733 Trace   Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-14 18:57:08.3733 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 18:57:08.3733 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:57:08.3733 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-14 18:57:08.3876 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:57:08.3876 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-14 18:57:08.3876 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-14 18:57:08.3876 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 18:57:08.3876 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-14 18:57:08.3876 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:57:08.4052 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-14 18:57:08.4052 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:57:08.4052 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-14 18:57:08.4052 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2023-09-14 18:57:08.4052 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2023-09-14 18:57:08.4052 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2\nlog.config
+2023-09-14 18:57:08.4248 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2023-09-14 18:57:08.4248 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2023-09-14 18:57:08.4248 Trace Initializing Layout Renderer: ${message}
+2023-09-14 18:57:08.4360 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 18:57:08.4360 Trace Initializing Layout Renderer: ${level}
+2023-09-14 18:57:08.4360 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 18:57:08.4360 Trace Initializing Layout Renderer: ${longdate}
+2023-09-14 18:57:08.4360 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2023-09-14 18:57:08.4501 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:57:08.4501 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-14 18:57:08.4501 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 18:57:08.4501 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-14 18:57:08.4501 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:57:08.4501 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-14 18:57:08.4671 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:57:08.4671 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-14 18:57:08.4671 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 18:57:08.4671 Trace Initializing Layout Renderer: ${shortdate}
+2023-09-14 18:57:08.4821 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 18:57:08.4821 Trace Initializing c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt
+2023-09-14 18:57:08.4821 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 18:57:08.4821 Trace Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-14 18:57:08.4821 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 18:57:08.4821 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:57:08.4992 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-14 18:57:08.4992 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 18:57:08.4992 Trace Initializing FileTarget(Name=logfile)
+2023-09-14 18:57:08.5121 Trace FindReachableObject<NLog.Layouts.Layout>:
+2023-09-14 18:57:08.5121 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-14 18:57:08.5121 Trace  Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-14 18:57:08.5121 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-14 18:57:08.5121 Trace FileTarget(Name=logfile) has 2 layouts
+2023-09-14 18:57:08.5121 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2023-09-14 18:57:08.5315 Info Configuration initialized.
+2023-09-14 19:07:56.5238 Debug Message Template Auto Format enabled
+2023-09-14 19:07:56.8252 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 19:07:56.8382 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-14 19:07:56.8501 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 19:07:56.8501 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-14 19:07:56.8750 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 19:07:56.8806 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-14 19:07:56.8806 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 19:07:56.8806 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-14 19:07:56.8997 Debug Adding target NLog.Targets.FileTarget(Name=logfile)
+2023-09-14 19:07:56.9078 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-09-14 19:07:56.9078 Trace ParseRulesElement
+2023-09-14 19:07:56.9863 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-14 19:07:57.0156 Debug Watching file-filter 'nlog.config' in directory: c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2
+2023-09-14 19:07:57.0156 Debug --- NLog configuration dump ---
+2023-09-14 19:07:57.0156 Debug Targets:
+2023-09-14 19:07:57.0384 Debug FileTarget(Name=logfile)
+2023-09-14 19:07:57.0384 Debug Rules:
+2023-09-14 19:07:57.0618 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2023-09-14 19:07:57.0712 Debug --- End of NLog configuration dump ---
+2023-09-14 19:07:57.0944 Trace FindReachableObject<System.Object>:
+2023-09-14 19:07:57.1009 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2023-09-14 19:07:57.1009 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2023-09-14 19:07:57.1229 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-14 19:07:57.1346 Trace   Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-14 19:07:57.1346 Trace   Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-14 19:07:57.1467 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 19:07:57.1467 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 19:07:57.1602 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-14 19:07:57.1602 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 19:07:57.1602 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-14 19:07:57.1823 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-14 19:07:57.1897 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 19:07:57.1897 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-14 19:07:57.2037 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 19:07:57.2037 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-14 19:07:57.2195 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 19:07:57.2195 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-14 19:07:57.2327 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2023-09-14 19:07:57.2327 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2023-09-14 19:07:57.2510 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2\nlog.config
+2023-09-14 19:07:57.2510 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2023-09-14 19:07:57.2791 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2023-09-14 19:07:57.2791 Trace Initializing Layout Renderer: ${message}
+2023-09-14 19:07:57.2943 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 19:07:57.3023 Trace Initializing Layout Renderer: ${level}
+2023-09-14 19:07:57.3023 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 19:07:57.3023 Trace Initializing Layout Renderer: ${longdate}
+2023-09-14 19:07:57.3190 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2023-09-14 19:07:57.3323 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 19:07:57.3323 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-14 19:07:57.3323 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 19:07:57.3494 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-14 19:07:57.3494 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 19:07:57.3494 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-14 19:07:57.3494 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 19:07:57.3661 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-14 19:07:57.3661 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 19:07:57.3785 Trace Initializing Layout Renderer: ${shortdate}
+2023-09-14 19:07:57.3785 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 19:07:57.3785 Trace Initializing c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt
+2023-09-14 19:07:57.3980 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 19:07:57.3980 Trace Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-14 19:07:57.4067 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 19:07:57.4067 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 19:07:57.4067 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-14 19:07:57.4067 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 19:07:57.4067 Trace Initializing FileTarget(Name=logfile)
+2023-09-14 19:07:57.4390 Trace FindReachableObject<NLog.Layouts.Layout>:
+2023-09-14 19:07:57.4390 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-14 19:07:57.4390 Trace  Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-14 19:07:57.4557 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-14 19:07:57.4557 Trace FileTarget(Name=logfile) has 2 layouts
+2023-09-14 19:07:57.4728 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2023-09-14 19:07:57.4860 Info Configuration initialized.
+2023-09-14 19:16:39.0076 Debug Message Template Auto Format enabled
+2023-09-14 19:16:39.2186 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 19:16:39.2323 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-14 19:16:39.2323 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 19:16:39.2487 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-14 19:16:39.2630 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 19:16:39.2630 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-14 19:16:39.2800 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 19:16:39.2888 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-14 19:16:39.2888 Debug Adding target NLog.Targets.FileTarget(Name=logfile)
+2023-09-14 19:16:39.3057 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-09-14 19:16:39.3157 Trace ParseRulesElement
+2023-09-14 19:16:39.3629 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-14 19:16:39.3629 Debug Watching file-filter 'nlog.config' in directory: c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2
+2023-09-14 19:16:39.3906 Debug --- NLog configuration dump ---
+2023-09-14 19:16:39.3975 Debug Targets:
+2023-09-14 19:16:39.3975 Debug FileTarget(Name=logfile)
+2023-09-14 19:16:39.4121 Debug Rules:
+2023-09-14 19:16:39.4121 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2023-09-14 19:16:39.4318 Debug --- End of NLog configuration dump ---
+2023-09-14 19:16:39.4513 Trace FindReachableObject<System.Object>:
+2023-09-14 19:16:39.4604 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2023-09-14 19:16:39.4604 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2023-09-14 19:16:39.4824 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-14 19:16:39.4906 Trace   Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-14 19:16:39.4906 Trace   Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-14 19:16:39.5070 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 19:16:39.5070 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 19:16:39.5261 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-14 19:16:39.5353 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 19:16:39.5353 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-14 19:16:39.5560 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-14 19:16:39.5560 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 19:16:39.5730 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-14 19:16:39.5836 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 19:16:39.5836 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-14 19:16:39.6018 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 19:16:39.6018 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-14 19:16:39.6195 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2023-09-14 19:16:39.6195 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2023-09-14 19:16:39.6397 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=c:\Angular\KudVenkat_Angular\AngularCrud_Reactive\BackendApi2\nlog.config
+2023-09-14 19:16:39.6530 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2023-09-14 19:16:39.6706 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2023-09-14 19:16:39.6776 Trace Initializing Layout Renderer: ${message}
+2023-09-14 19:16:39.6776 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 19:16:39.6776 Trace Initializing Layout Renderer: ${level}
+2023-09-14 19:16:39.7010 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 19:16:39.7010 Trace Initializing Layout Renderer: ${longdate}
+2023-09-14 19:16:39.7134 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2023-09-14 19:16:39.7134 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 19:16:39.7335 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2023-09-14 19:16:39.7406 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 19:16:39.7406 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2023-09-14 19:16:39.7406 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 19:16:39.7674 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-09-14 19:16:39.7735 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 19:16:39.7735 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-09-14 19:16:39.7975 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 19:16:39.8035 Trace Initializing Layout Renderer: ${shortdate}
+2023-09-14 19:16:39.8035 Trace Initializing Layout Renderer: ${literal}
+2023-09-14 19:16:39.8035 Trace Initializing c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt
+2023-09-14 19:16:39.8268 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-09-14 19:16:39.8353 Trace Scanning SimpleLayout 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt'
+2023-09-14 19:16:39.8353 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-09-14 19:16:39.8531 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 19:16:39.8634 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2023-09-14 19:16:39.8634 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-09-14 19:16:39.8814 Trace Initializing FileTarget(Name=logfile)
+2023-09-14 19:16:39.8967 Trace FindReachableObject<NLog.Layouts.Layout>:
+2023-09-14 19:16:39.8967 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2023-09-14 19:16:39.9152 Trace  Scanning Property FileName 'c:/Angular/KudVenkat_Angular/AngularCrud_Reactive/BackendApi2/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2023-09-14 19:16:39.9152 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2023-09-14 19:16:39.9309 Trace FileTarget(Name=logfile) has 2 layouts
+2023-09-14 19:16:39.9422 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2023-09-14 19:16:39.9422 Info Configuration initialized.

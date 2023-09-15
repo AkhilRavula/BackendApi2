@@ -6,6 +6,7 @@ using AutoMapper;
 using BackendApi2.Contracts;
 using BackendApi2.Entities.DTOModels;
 using BackendApi2.Entities.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BackendApi2.Controllers
@@ -27,115 +28,88 @@ namespace BackendApi2.Controllers
 
 
         [HttpGet("")]
-        public IActionResult GetALLEmployees()
+        [Authorize]
+        public async Task<IActionResult> GetALLEmployees()
         {
-            try
-            {
-
-                IEnumerable<Employee> emps = _repositoryWrapper.employee.GetEmployees();
-                var _emps = _mapper.Map<IEnumerable<EmployeeDTO>>(emps);
-                return Ok(_emps);
-
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, ex.Message);
-            }
+            IEnumerable<Employee> emps = await _repositoryWrapper.employee.GetEmployees();
+            var _emps = _mapper.Map<IEnumerable<EmployeeDTO>>(emps);
+            return Ok(_emps);
         }
 
         [HttpGet("{id:int}", Name = "GetEmployeeById")]
-        public IActionResult GetEmployeById(int id)
+        public async Task<IActionResult> GetEmployeById(int id)
         {
-            try
+
+            var employee = await _repositoryWrapper.employee.GetEmployeeById(id);
+            if (employee is null)
             {
-                var employee = _repositoryWrapper.employee.GetEmployeeById(id);
-                if (employee is null)
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    var empdto = _mapper.Map<EmployeeDTO>(employee);
-                    return Ok(empdto);
-                }
+                return NotFound();
             }
-            catch (Exception ex)
+            else
             {
-                return StatusCode(500, ex.Message);
+                var empdto = _mapper.Map<EmployeeDTO>(employee);
+                return Ok(empdto);
             }
+
         }
 
 
         [HttpPost]
         public IActionResult CreateEmployee([FromBody] EmployeeForCreateDto employeeDTO)
         {
-            try
+
+            if (employeeDTO is null)
+                return BadRequest("Employee information is in correct");
+
+            if (!ModelState.IsValid)
             {
-                if (employeeDTO is null)
-                    return BadRequest();
-
-                if (!ModelState.IsValid)
-                {
-                    return BadRequest();
-                }
-
-                var employee = _mapper.Map<Employee>(employeeDTO);
-                _repositoryWrapper.employee.CreateEmployee(employee);
-                _repositoryWrapper.save();
-                return CreatedAtRoute("GetEmployeeById", new { id = employee.Id }, employeeDTO);
-
+                return BadRequest(ModelState);
             }
-            catch (Exception ex)
-            {
-                return StatusCode(500, ex.Message);
-            }
+
+            var employee = _mapper.Map<Employee>(employeeDTO);
+            _repositoryWrapper.employee.CreateEmployee(employee);
+            _repositoryWrapper.save();
+            return CreatedAtRoute("GetEmployeeById", new { id = employee.Id }, employeeDTO);
+
+
         }
 
         [HttpPut("{id:int}")]
-        public IActionResult UpdateEmployeeId(int id, [FromBody] EmployeeForCreateDto employee)
+        public async Task<IActionResult> UpdateEmployeeId(int id, [FromBody] EmployeeForCreateDto employee)
         {
-            try
+            if (employee is null)
             {
-
-
-                if (employee is null)
-                {
-                    return BadRequest();
-                }
-                if (!ModelState.IsValid)
-                {
-                    return BadRequest("Invalid model object");
-                }
-
-                var _employee = _repositoryWrapper.employee.GetEmployeeById(id);
-
-                if (_employee is null)
-                {
-                    return NotFound();
-                }
-                _mapper.Map(employee, _employee);
-
-                _repositoryWrapper.employee.UpdateEmployeeById(_employee);
-
-                _repositoryWrapper.save();
-
-                return NoContent();
+                return BadRequest();
             }
-            catch (Exception ex)
+            if (!ModelState.IsValid)
             {
-                return StatusCode(500, ex.Message);
+                return BadRequest("Invalid model object");
             }
+
+            var _employee = await _repositoryWrapper.employee.GetEmployeeById(id);
+
+            if (_employee is null)
+            {
+                return NotFound();
+            }
+            _mapper.Map(employee, _employee);
+
+            _repositoryWrapper.employee.UpdateEmployeeById(_employee);
+
+            await _repositoryWrapper.save();
+
+            return NoContent();
 
         }
 
         [HttpDelete("{id:int}")]
-        public IActionResult DeleteEmployeById(int id)
+        public async Task<IActionResult> DeleteEmployeById(int id)
         {
-            var emp = _repositoryWrapper.employee.GetEmployeeById(id);
+            var emp = await _repositoryWrapper.employee.GetEmployeeById(id);
             if (emp is null)
                 return NotFound();
             _repositoryWrapper.employee.DeleteEmployeeById(emp);
-            _repositoryWrapper.save();
+            await _repositoryWrapper.save();
             return NoContent();
         }
 

@@ -2,6 +2,7 @@
 using BackendApi2.Contracts;
 using BackendApi2.Entities;
 using BackendApi2.Entities.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace BackendApi2.Repository
 {
@@ -12,14 +13,14 @@ namespace BackendApi2.Repository
             
         }
 
-        public IEnumerable<Employee> GetEmployees()
+        public async Task<IEnumerable<Employee>> GetEmployees()
         {
-            return FindALLwithRelatedEntities("Skills").OrderBy(c=>c.Id).ToList();
+            return await FindALLwithRelatedEntities("Skills").OrderBy(c=>c.Id).ToListAsync();
         }
 
-        public Employee GetEmployeeById(int Empid)
+        public async Task<Employee> GetEmployeeById(int Empid)
         {
-            return FindByConditionWithRelatedEntities("Skills",c=>c.Id.Equals(Empid)).First();
+            return await FindByConditionWithRelatedEntities("Skills",c=>c.Id.Equals(Empid)).FirstOrDefaultAsync();
         }
 
         public void UpdateEmployeeById(Employee employee)

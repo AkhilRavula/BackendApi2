@@ -9,6 +9,8 @@ namespace BackendApi2.Contracts
     {
         IEmployeeRepository employee { get; }
         ISkillRepository skill { get; }
-        void save();
+
+        IUserRepository user { get; }
+        Task save();
     }
 }

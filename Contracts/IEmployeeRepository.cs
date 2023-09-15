@@ -8,9 +8,9 @@ namespace BackendApi2.Contracts
 {
     public interface IEmployeeRepository : IRepositoryBase<Employee>
     {
-        IEnumerable<Employee> GetEmployees();
+        Task<IEnumerable<Employee>> GetEmployees();
 
-        Employee GetEmployeeById(int employeeId);
+        Task<Employee> GetEmployeeById(int employeeId);
 
         void UpdateEmployeeById(Employee employee);
 

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using BackendApi2.Contracts;
 using BackendApi2.Entities;
 using BackendApi2.Entities.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace BackendApi2.Repository
 {
@@ -19,9 +20,9 @@ namespace BackendApi2.Repository
            Delete(skill);
         }
 
-        public Skill GetSkillsByid(int skillId)
+        public async Task<Skill> GetSkillsByid(int skillId)
         {
-            return FindByCondition(c=>c.SkillId.Equals(skillId)).First();
+            return await FindByCondition(c=>c.SkillId.Equals(skillId)).FirstOrDefaultAsync();
         }
     }
 }

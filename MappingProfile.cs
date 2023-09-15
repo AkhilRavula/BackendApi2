@@ -16,7 +16,7 @@ public class MappingProfile : Profile
 
         CreateMap<SkillCreationDto,Skill>();
 
-
+        CreateMap<RegisterUserDto,User>();
     }
 
 

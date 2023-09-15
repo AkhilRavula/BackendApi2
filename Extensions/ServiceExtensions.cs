@@ -1,7 +1,9 @@
+using System.Net;
 using BackendApi2.Contracts;
 using BackendApi2.Entities;
 using BackendApi2.LoggerService;
 using BackendApi2.Repository;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -33,4 +35,38 @@ public static class ServiceExtensions
       {
             services.AddScoped<IRepositoryWrapper,RepositoryWrapper>();
       }
+
+
+       public static void ConfigureExceptionHandler(this IApplicationBuilder app, ILoggerManager logger)
+        {
+            app.UseExceptionHandler(appError =>
+            {
+                appError.Run(async context =>
+                {
+                    //context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                    context.Response.ContentType = "application/json";
+                    var contextFeature = context.Features.Get<IExceptionHandlerFeature>();
+                   
+                    if(contextFeature != null)
+                    { 
+                    context.Response.StatusCode = contextFeature.Error switch
+                       {
+                       // BadRequest => StatusCodes.Status400BadRequest,
+                      //  NotFoundException => StatusCodes.Status404NotFound,
+                        _ => StatusCodes.Status500InternalServerError
+                        };
+
+                        logger.LogError($"Something went wrong: {contextFeature.Error}");
+                        await context.Response.WriteAsync(new ErrorDetails()
+                        {
+
+                            StatusCode = context.Response.StatusCode,
+
+                            Message = contextFeature.Error.Message
+
+                        }.ToString());
+                    }
+                });
+            });
+        }
 }

@@ -33,5 +33,10 @@ namespace BackendApi2.Repository
          {
             return RepositoryContext.Set<T>().Include(Navigationproperty).Where(expression).AsNoTracking();
          }
+
+         public Task<bool> CheckExists(Expression<Func<T, bool>> expression)
+         {
+            return RepositoryContext.Set<T>().AnyAsync(expression);
+         }
     }
 }
