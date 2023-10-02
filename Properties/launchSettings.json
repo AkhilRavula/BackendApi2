@@ -12,8 +12,8 @@
     "BackendApi2": {
       "commandName": "Project",
       "dotnetRunMessages": true,
-      "launchBrowser": false,
-      "launchUrl": "api/Employees",
+      "launchBrowser": true,
+      "launchUrl": "",
       "applicationUrl": "http://localhost:5142",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

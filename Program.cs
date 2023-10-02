@@ -16,7 +16,11 @@ builder.Services.ConfigureCors();
 builder.Services.ConfigureLoggerService();
 builder.Services.ConfigureRepositry();
 builder.Services.AddAutoMapper(typeof(Program));
- builder.Services.AddControllers().AddJsonOptions(options=>
+ builder.Services.AddControllers(config=>
+ {
+    config.ReturnHttpNotAcceptable=true;
+    config.RespectBrowserAcceptHeader = true;
+ }).AddXmlSerializerFormatters().AddJsonOptions(options=>
 {
     options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
     options.JsonSerializerOptions.WriteIndented = true;
@@ -57,7 +61,20 @@ else
 
 var logger = app.Services.GetRequiredService<ILoggerManager>();
 app.ConfigureExceptionHandler(logger);
+
+
+app.Use( async ( context, next ) => {
+    await next();
+
+    if( context.Response.StatusCode == 404 && !Path.HasExtension( context.Request.Path.Value ) ) {
+        context.Request.Path = "/index.html";
+        await next();
+    }
+});
+
 app.UseStaticFiles();
+app.UseFileServer();
+
 app.UseForwardedHeaders(new ForwardedHeadersOptions 
 { 
     ForwardedHeaders = ForwardedHeaders.All 

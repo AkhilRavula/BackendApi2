@@ -5,5 +5,4 @@ public class LoginResDto
 
       public string token { get; set; } = null!;
 
-      public string Role { get; set; } = null!; 
 }

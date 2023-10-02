@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using AutoMapper;
 using BackendApi2.Contracts;
+using BackendApi2.CustomExceptions;
 using BackendApi2.Entities.DTOModels;
 using BackendApi2.Entities.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -19,11 +21,17 @@ namespace BackendApi2.Controllers
         private IRepositoryWrapper _repositoryWrapper;
 
         private IMapper _mapper;
-        public EmployeesController(IRepositoryWrapper repositoryWrapper, IMapper mapper)
+
+
+       // private readonly IWebHostEnvironment _hostingEnvironment;
+        public EmployeesController(IRepositoryWrapper repositoryWrapper, 
+        IMapper mapper)
         {
             _repositoryWrapper = repositoryWrapper;
 
             _mapper = mapper;
+
+           // _hostingEnvironment = webHostEnvironment;
         }
 
 
@@ -32,18 +40,28 @@ namespace BackendApi2.Controllers
         public async Task<IActionResult> GetALLEmployees()
         {
             IEnumerable<Employee> emps = await _repositoryWrapper.employee.GetEmployees();
-            var _emps = _mapper.Map<IEnumerable<EmployeeDTO>>(emps);
+            IEnumerable<EmployeeDTO> _emps = _mapper.Map<IEnumerable<EmployeeDTO>>(emps);
+            
+           // string htmlFilePath = Path.Combine(_hostingEnvironment.WebRootPath,
+             //"assets", "Images","create.png");
+
+           //  Console.WriteLine(htmlFilePath);
             return Ok(_emps);
         }
 
         [HttpGet("{id:int}", Name = "GetEmployeeById")]
+        [Authorize]
         public async Task<IActionResult> GetEmployeById(int id)
         {
+            string Role =  (User.FindFirst(ClaimTypes.Role).Value);
+
+            if(Role!="Admin")
+              return Unauthorized("Only Admins are allowed to create & edit employees");
 
             var employee = await _repositoryWrapper.employee.GetEmployeeById(id);
             if (employee is null)
             {
-                return NotFound();
+               throw new EmployeeNotFoundException($"Employee with {id} not found");
             }
             else
             {
@@ -55,8 +73,13 @@ namespace BackendApi2.Controllers
 
 
         [HttpPost]
+        [Authorize(Roles ="Admin")]
         public IActionResult CreateEmployee([FromBody] EmployeeForCreateDto employeeDTO)
         {
+            // string Role =  User.FindFirst(ClaimTypes.Role).Value;
+            
+            // if(Role!="Admin")
+            //   return Unauthorized("Only Admins are allowed to create & edit employees");
 
             if (employeeDTO is null)
                 return BadRequest("Employee information is in correct");
@@ -70,8 +93,6 @@ namespace BackendApi2.Controllers
             _repositoryWrapper.employee.CreateEmployee(employee);
             _repositoryWrapper.save();
             return CreatedAtRoute("GetEmployeeById", new { id = employee.Id }, employeeDTO);
-
-
         }
 
         [HttpPut("{id:int}")]

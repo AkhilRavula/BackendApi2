@@ -1,5 +1,6 @@
 using System.Net;
 using BackendApi2.Contracts;
+using BackendApi2.CustomExceptions;
 using BackendApi2.Entities;
 using BackendApi2.LoggerService;
 using BackendApi2.Repository;
@@ -51,8 +52,8 @@ public static class ServiceExtensions
                     { 
                     context.Response.StatusCode = contextFeature.Error switch
                        {
-                       // BadRequest => StatusCodes.Status400BadRequest,
-                      //  NotFoundException => StatusCodes.Status404NotFound,
+                        BadHttpRequestException => StatusCodes.Status400BadRequest,
+                        EmployeeNotFoundException => StatusCodes.Status404NotFound,
                         _ => StatusCodes.Status500InternalServerError
                         };
 

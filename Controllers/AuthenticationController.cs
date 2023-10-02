@@ -43,7 +43,6 @@ public class AuthenticationController : ControllerBase
           LoginResDto loginResDto= new LoginResDto()
           {
             Username = userlogin.Username,
-            Role = userlogin.Role,
             token=jwttoken
            };
            return Ok(loginResDto);
